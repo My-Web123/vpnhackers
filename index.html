@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN HACKERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+  --primary-color: #00f5ff;    /* Neon cyan */
+  --secondary-color: #0a0a12;  /* Dark blue-black */
+  --accent-color: #ff00ff;     /* Neon magenta */
+  --text-color: #e0e0e0;       /* Light gray */
+  --card-bg: rgba(15, 15, 30, 0.8); /* Dark blue semi-transparent */
+  --hover-color: #00ff88;      /* Neon green */
+  --dark-bg: #050810;          /* Very dark blue */
+  --border-glow: rgba(0, 245, 255, 0.5); /* Cyan glow */
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #050810 0%, #0a0a12 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background elements */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(0, 245, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.03) 0%, transparent 50%);
+            z-index: -1;
+            animation: pulse 15s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.8; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(5, 8, 16, 0.9);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 245, 255, 0.3);
+            border-bottom: 1px solid var(--border-glow);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 10px 0;
+            background-color: rgba(5, 8, 16, 0.95);
+            box-shadow: 0 4px 25px rgba(0, 245, 255, 0.5);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 900;
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(0, 245, 255, 0.7);
+            letter-spacing: 2px;
+            font-size: 1.8rem;
+        }
+
+        .logo i {
+            font-size: 28px;
+            color: var(--accent-color);
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            display: none;
+        }
+
+        header.scrolled .logo-text {
+            display: block;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+            text-shadow: 0 0 5px rgba(0, 245, 255, 0.7);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            background: url('https://i.postimg.cc/GtKSBV5D/online-hacking-background-3d-illustration.jpg') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 8, 16, 0.7);
+        }
+
+        /* Animated grid overlay */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 1;
+            animation: grid-move 20s linear infinite;
+        }
+
+        @keyframes grid-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(40px, 40px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 
+                0 0 10px rgba(0, 245, 255, 0.8),
+                0 0 20px rgba(0, 245, 255, 0.5),
+                0 0 30px rgba(0, 245, 255, 0.3);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 
+                    0 0 10px var(--primary-color),
+                    0 0 20px var(--primary-color),
+                    0 0 30px var(--primary-color);
+            }
+            to {
+                text-shadow: 
+                    0 0 15px var(--primary-color),
+                    0 0 25px var(--primary-color),
+                    0 0 35px var(--primary-color),
+                    0 0 45px var(--accent-color);
+            }
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 
+                0 4px 15px rgba(0, 245, 255, 0.4),
+                0 0 15px rgba(255, 0, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+            z-index: -1;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        .btn:hover::before {
+            opacity: 1;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                0 6px 20px rgba(0, 245, 255, 0.6),
+                0 0 25px rgba(255, 0, 255, 0.5);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 60px;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(0, 245, 255, 0.3);
+            border: 3px solid var(--primary-color);
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            border-radius: 15px;
+            z-index: 0;
+            opacity: 0.7;
+            filter: blur(10px);
+        }
+
+        /* Configurations Section */
+        .configs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .config-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 
+                0 5px 15px rgba(0, 0, 0, 0.3),
+                0 0 15px rgba(0, 245, 255, 0.2);
+            border-left: 5px solid var(--primary-color);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .config-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 245, 255, 0.1), rgba(255, 0, 255, 0.1));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .config-card:hover::before {
+            opacity: 1;
+        }
+
+        .config-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 
+                0 15px 30px rgba(0, 0, 0, 0.4),
+                0 0 25px rgba(0, 245, 255, 0.4);
+            border-left-color: var(--accent-color);
+        }
+
+        .config-card h3 {
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+        }
+
+        .config-card h3 i {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+
+        .config-card p {
+            margin-bottom: 20px;
+            color: #cccccc;
+            font-weight: 300;
+        }
+
+        .config-link {
+            background-color: rgba(0, 245, 255, 0.1);
+            border: 1px solid var(--border-glow);
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            word-break: break-all;
+            margin-bottom: 15px;
+            color: #f0f0f0;
+            position: relative;
+        }
+
+        .copy-btn {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 245, 255, 0.3);
+        }
+
+        .copy-btn:hover {
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+            box-shadow: 0 6px 15px rgba(0, 245, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Packages Section */
+        .packages-container {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(0, 245, 255, 0.2);
+            border: 1px solid var(--border-glow);
+        }
+
+        .package-category {
+            margin-bottom: 50px;
+        }
+
+        .package-category h3 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .package-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .package-card {
+            background-color: rgba(5, 8, 16, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid rgba(0, 245, 255, 0.3);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 245, 255, 0.1), rgba(255, 0, 255, 0.1));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .package-card:hover::before {
+            opacity: 1;
+        }
+
+        .package-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 245, 255, 0.3);
+        }
+
+        .package-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #f0f0f0;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .package-card .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+        }
+
+        .package-card .features {
+            margin-bottom: 25px;
+            color: #cccccc;
+        }
+
+        .package-card .features li {
+            list-style: none;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 300;
+        }
+
+        .package-card .features li i {
+            color: var(--hover-color);
+        }
+
+        .order-btn {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            width: 100%;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 245, 255, 0.3);
+        }
+
+        .order-btn:hover {
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+            box-shadow: 0 6px 20px rgba(0, 245, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(5, 8, 16, 0.9);
+            padding: 50px 0 25px;
+            text-align: center;
+            border-top: 1px solid var(--border-glow);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-logo h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-links h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--primary-color);
+            text-shadow: 0 0 5px rgba(0, 245, 255, 0.5);
+        }
+
+        .copyright {
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #888;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.4rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .header-content {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .logo-text {
+                display: block;
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 5px 10px;
+            }
+
+            header {
+                height: auto;
+            }
+
+            header.scrolled {
+                height: auto;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* Notification */
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 
+                0 5px 15px rgba(0, 0, 0, 0.3),
+                0 0 15px rgba(0, 245, 255, 0.5);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-user-secret"></i>
+                <span class="logo-text">VPN HACKERS</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>                   
+                    <li><a href="#configs">Configs</a></li>
+                    <li><a href="#packages">Buy VPN</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>VPN HACKERS</h1>
+            <p>Speed Sri Lanka VPN Configurations for Unrestricted Access</p>
+            <a href="#configs" class="btn">Access Free Configs</a>
+        </div>
+    </section>
+
+
+
+    <!-- Configurations Section -->
+    <section id="configs" class="container">
+        <h2 class="section-title">Speed V2Ray Configurations</h2>
+        <div class="configs-grid">
+            <!-- Config Card 1 -->
+            <div class="config-card">
+                <h3><i class="fas fa-bolt"></i> Dialog Zoom</h3>
+                <p>Optimized for maximum speed on Dialog Zoom networks</p>
+                <div class="config-link">vless://0ad27108-36bf-4bd1-b976-17f167398843@whybro.lakshitha.shop:443?type=tcp&encryption=none&security=tls&fp=chrome&alpn=&sni=aka.ms#VPN-HACKERS%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-e30v09rl</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 2 -->
+            <div class="config-card">
+                <h3><i class="fas fa-signal"></i> Airtel 389 | 909</h3>
+                <p>Specialized configuration for Airtel 389 and 909 networks</p>
+                <div class="config-link">vless://0ad27108-36bf-4bd1-b976-17f167398843@whybro.lakshitha.shop:443?type=tcp&encryption=none&security=tls&fp=chrome&alpn=&sni=android.googleapis.com#VPN-HACKERS%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-e30v09rl</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 3 -->
+            <div class="config-card">
+                <h3><i class="fab fa-whatsapp"></i> Airtel All Whatsapp</h3>
+                <p>Unlimited WhatsApp access on Airtel networks</p>
+                <div class="config-link">vless://0ad27108-36bf-4bd1-b976-17f167398843@whybro.lakshitha.shop:443?type=tcp&encryption=none&security=tls&fp=chrome&alpn=&sni=v.whatsapp.net#VPN-HACKERS%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-e30v09rl</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 4 -->
+            <div class="config-card">
+                <h3><i class="fab fa-whatsapp"></i> Hutch Whatsapp</h3>
+                <p>Optimized for WhatsApp on Hutch network</p>
+                <div class="config-link">vless://0ad27108-36bf-4bd1-b976-17f167398843@whybro.lakshitha.shop:443?type=tcp&encryption=none&security=tls&fp=chrome&alpn=&sni=t.me#VPN-HACKERS%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-e30v09rl</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 5 -->
+            <div class="config-card">
+                <h3><i class="fab fa-youtube"></i> Hutch YouTube</h3>
+                <p>High-speed YouTube streaming on Hutch network</p>
+                <div class="config-link">vless://fa584ecd-bf40-4129-ac00-70eabaef001a@speed.lakshitha.shop:443?type=tcp&security=tls&fp=chrome&alpn=&sni=http://youtube.com#VPN%20HACKERS-ELITE</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 6 -->
+            <div class="config-card">
+                <h3><i class="fas fa-gamepad"></i> Hutch Gaming</h3>
+                <p>Low-latency gaming configuration for Hutch network</p>
+                <div class="config-link">vless://0ad27108-36bf-4bd1-b976-17f167398843@whybro.lakshitha.shop:443?type=tcp&encryption=none&security=tls&fp=chrome&alpn=&sni=store.steampowered.com#VPN-HACKERS%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-e30v09rl</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 7 -->
+            <div class="config-card">
+                <h3><i class="fas fa-video"></i> SLT FIBER ZOOM</h3>
+                <p>High-speed Zoom calls on SLT Fiber connections</p>
+                <div class="config-link">vless://0ad27108-36bf-4bd1-b976-17f167398843@whybro.lakshitha.shop:443?type=tcp&encryption=none&security=tls&fp=chrome&alpn=&sni=zoom.us#VPN-HACKERS%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-e30v09rl</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 8 -->
+            <div class="config-card">
+                <h3><i class="fas fa-video"></i> Mobitel Zoom</h3>
+                <p>Optimized for Zoom calls on Mobitel network</p>
+                <div class="config-link">vmess://ew0KICAiYWRkIjogIm5ld3Muem9vbS51cyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJob3N0IjogIndoeWJyby5sYWtzaGl0aGEuc2hvcCIsDQogICJpZCI6ICJhZjllOGZkMC0zMTRlLTRhZmUtOTBhZC05MGI4YzFjYjQ1YTQiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiLyIsDQogICJwb3J0IjogIjIwOTYiLA0KICAicHMiOiAiPz8/VlBOLUhBQ0tFUlM/Pz8tdG83eXJsNjYiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAid2h5YnJvLmxha3NoaXRoYS5zaG9wIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJ2IjogIjIiLA0KICAiZnAiOiAiY2hyb21lIg0KfQ==</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+
+            <!-- Config Card 9 -->
+            <div class="config-card">
+                <h3><i class="fas fa-video"></i> Hutch/Airtel Zoom</h3>
+                <p>Universal Zoom configuration for Hutch and Airtel</p>
+                <div class="config-link">vmess://ew0KICAiYWRkIjogInN1cHBvcnQuem9vbS51cyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJob3N0IjogIndoeWJyby5sYWtzaGl0aGEuc2hvcCIsDQogICJpZCI6ICJlYzc0ZGY2Yi00MWIxLTQ0NjItOTUxNy02MzZkMDU0NTMyMDMiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiLyIsDQogICJwb3J0IjogIjgwODAiLA0KICAicHMiOiAiVlBOLUhBQ0tFUlM/Pz8/Pz8/Pz8/Pz8/Pz8tdmI1OTlqYWkiLA0KICAidGxzIjogIm5vbmUiLA0KICAic25pIjogIiIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAidiI6ICIyIg0KfQ==</div>
+                <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="container">
+        <h2 class="section-title">Premium VPN Packages</h2>
+        <div class="packages-container">
+            <!-- Package Category 1 -->
+            <div class="package-category">
+                <h3>Dialog Zoom</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Dialog Zoom', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Dialog Zoom', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Dialog Zoom', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 2 -->
+            <div class="package-category">
+                <h3>Airtel 498</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Airtel 498', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Airtel 498', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Airtel 498', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 3 -->
+            <div class="package-category">
+                <h3>Airtel 389|909</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Airtel 389|909', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Airtel 389|909', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Airtel 389|909', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 4 -->
+            <div class="package-category">
+                <h3>Hutch Zoom</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Zoom', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Zoom', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Zoom', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 5 -->
+            <div class="package-category">
+                <h3>Mobitel Zoom</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Mobitel Zoom', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Mobitel Zoom', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Mobitel Zoom', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 6 -->
+            <div class="package-category">
+                <h3>Hutch Whatsapp</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Whatsapp', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Whatsapp', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Whatsapp', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 7 -->
+            <div class="package-category">
+                <h3>Hutch Gaming</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Gaming', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Gaming', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('Hutch Gaming', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 8 -->
+            <div class="package-category">
+                <h3>SLT Fiber Zoom</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('SLT Fiber Zoom', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('SLT Fiber Zoom', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('SLT Fiber Zoom', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category 9 -->
+            <div class="package-category">
+                <h3>SLT Fiber Netflix</h3>
+                <div class="package-options">
+                    <div class="package-card">
+                        <h4>100GB</h4>
+                        <div class="price">Rs.100</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('SLT Fiber Netflix', '100GB', 'Rs.100')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>200GB</h4>
+                        <div class="price">Rs.200</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Elite Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Military Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('SLT Fiber Netflix', '200GB', 'Rs.200')">Order Now</button>
+                    </div>
+                    <div class="package-card">
+                        <h4>Unlimited</h4>
+                        <div class="price">Rs.300</div>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Speed</li>
+                            <li><i class="fas fa-check-circle"></i> Elite Security</li>
+                            <li><i class="fas fa-check-circle"></i> 30 Days Access</li>
+                        </ul>
+                        <button class="order-btn" onclick="orderPackage('SLT Fiber Netflix', 'Unlimited', 'Rs.300')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About The Developer</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Lakshitha Ishara</h2>
+                <p>I'm a cybersecurity specialist and VPN architect with expertise in creating secure network solutions. My focus is on developing advanced V2Ray protocols optimized for Sri Lankan networks.</p>
+                <p>I created VPN HACKERS to provide elite, unrestricted access to the internet through specialized configurations that bypass network limitations while maintaining maximum security and privacy.</p>
+                <p>My mission is to democratize secure internet access across Sri Lanka, empowering users with tools that ensure privacy, freedom, and unrestricted connectivity.</p>
+                <a href="#configs" class="btn">View Configurations</a>
+            </div>
+            <div class="about-image">
+                <img src="https://i.postimg.cc/xT6Yb4rn/1338166.png" alt="Lakshitha Ishara">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>VPN HACKERS</h2>
+                <p>Elite VPN Solutions for Sri Lanka</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#configs">Configurations</a></li>
+                    <li><a href="#packages">Premium VPN</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fab fa-whatsapp"></i> WhatsApp: +94786554240</li>
+                    <li><i class="fas fa-envelope"></i> Email: nameishara@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 VPN HACKERS. All rights reserved. Developed by Lakshitha Ishara</p>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <span id="notification-text"></span>
+    </div>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Copy configuration function
+        function copyConfig(button) {
+            const configCard = button.parentElement;
+            const configLink = configCard.querySelector('.config-link').innerText;
+            
+            navigator.clipboard.writeText(configLink).then(() => {
+                showNotification('Configuration copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showNotification('Failed to copy configuration');
+            });
+        }
+
+        // Order package function
+        function orderPackage(service, package, price) {
+            const message = `Hi! I would like to order:%0A%0AService: ${service}%0APackage: ${package}%0APrice: ${price}%0A%0APlease provide me with the V2Ray configuration and payment details.`;
+            const whatsappUrl = `https://api.whatsapp.com/send/?phone=94786554240&text=${message}&type=phone_number&app_absent=0`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Show notification
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notification-text');
+            
+            notificationText.textContent = message;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
