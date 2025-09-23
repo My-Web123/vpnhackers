@@ -88,27 +88,17 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            justify-content: center;
             font-weight: 900;
             font-family: 'Orbitron', sans-serif;
             color: var(--primary-color);
             text-shadow: 0 0 10px rgba(0, 245, 255, 0.7);
             letter-spacing: 2px;
-            font-size: 1.8rem;
         }
 
         .logo i {
             font-size: 28px;
             color: var(--accent-color);
-        }
-
-        .logo-text {
-            font-size: 1.2rem;
-            display: none;
-        }
-
-        header.scrolled .logo-text {
-            display: block;
         }
 
         nav ul {
@@ -696,33 +686,52 @@
                 flex-direction: column;
             }
 
+            /* Modified header styles for mobile */
             .header-content {
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
                 padding: 10px 0;
             }
 
-            .logo-text {
-                display: block;
-                font-size: 1rem;
+            .logo {
+                width: 40px;
+                height: 40px;
+                font-size: 0;
+            }
+
+            .logo i {
+                font-size: 24px;
+            }
+
+            nav {
+                width: calc(100% - 60px);
             }
 
             nav ul {
                 flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 10px;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                width: 100%;
             }
 
             nav ul li {
-                margin: 5px 10px;
+                margin: 0;
+            }
+
+            nav ul li a {
+                font-size: 0.8rem;
+                padding: 5px 0;
             }
 
             header {
                 height: auto;
+                padding: 10px 0;
             }
 
             header.scrolled {
                 height: auto;
+                padding: 8px 0;
             }
             
             .section-title {
@@ -764,7 +773,6 @@
         <div class="container header-content">
             <div class="logo">
                 <i class="fas fa-user-secret"></i>
-                <span class="logo-text">VPN HACKERS</span>
             </div>
             <nav>
                 <ul>
@@ -852,7 +860,7 @@
             <div class="config-card">
                 <h3><i class="fas fa-video"></i> Mobitel Zoom</h3>
                 <p>Optimized for Zoom calls on Mobitel network</p>
-                <div class="config-link">vmess://ew0KICAiYWRkIjogIm5ld3Muem9vbS51cyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJob3N0IjogIndoeWJyby5sYWtzaGl0aGEuc2hvcCIsDQogICJpZCI6ICJhZjllOGZkMC0zMTRlLTRhZmUtOTBhZC05MGI4YzFjYjQ1YTQiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiLyIsDQogICJwb3J0IjogIjIwOTYiLA0KICAicHMiOiAiPz8/VlBOLUhBQ0tFUlM/Pz8tdG83eXJsNjYiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAid2h5YnJvLmxha3NoaXRoYS5zaG9wIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJ2IjogIjIiLA0KICAiZnAiOiAiY2hyb21lIg0KfQ==</div>
+                <div class="config-link">vmess://ew0KICAiYWRkIjogIm5ld3cuem9vbS51cyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJob3N0IjogIndoeWJyby5sYWtzaGl0aGEuc2hvcCIsDQogICJpZCI6ICJhZjllOGZkMC0zMTRlLTRhZmUtOTBhZC05MGI4YzFjYjQ1YTQiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiLyIsDQogICJwb3J0IjogIjIwOTYiLA0KICAicHMiOiAiPz8/VlBOLUhBQ0tFUlM/Pz8tdG83eXJsNjYiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAid2h5YnJvLmxha3NoaXRoYS5zaG9wIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJ2IjogIjIiLA0KICAiZnAiOiAiY2hyb21lIg0KfQ==</div>
                 <button class="copy-btn" onclick="copyConfig(this)"><i class="fas fa-copy"></i> Copy Config</button>
             </div>
 
